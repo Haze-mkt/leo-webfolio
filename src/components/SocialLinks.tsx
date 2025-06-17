@@ -7,19 +7,19 @@ export const SocialLinks = () => {
     {
       name: "LinkedIn",
       icon: Linkedin,
-      url: "https://linkedin.com/in/leonardo-rohrbacher",
+      url: "https://www.linkedin.com/in/leonardo-rohrbacher/",
       color: "hover:text-blue-600"
     },
     {
       name: "GitHub",
       icon: Github,
-      url: "https://github.com/leonardo-rohrbacher",
+      url: "https://github.com/leorohrba",
       color: "hover:text-gray-900"
     },
     {
       name: "Instagram",
       icon: Instagram,
-      url: "https://instagram.com/leonardo.rohrbacher",
+      url: "https://instagram.com/leo_rohrba",
       color: "hover:text-pink-600"
     }
   ];

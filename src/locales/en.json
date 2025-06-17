@@ -1,0 +1,57 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Leonardo Rohrbacher",
+    "role": "Full Stack Developer",
+    "description": "Crafting beautiful, scalable web applications with modern technologies. Passionate about creating exceptional user experiences and robust backend solutions.",
+    "viewWork": "View My Work",
+    "getInTouch": "Get In Touch"
+  },
+  "about": {
+    "title": "About Me",
+    "paragraph1": "I'm a passionate full stack developer with expertise in modern web technologies. I love building applications that solve real-world problems and provide exceptional user experiences.",
+    "paragraph2": "With experience in both frontend and backend development, I bring ideas to life through clean, efficient code and thoughtful design. I'm always eager to learn new technologies and tackle challenging projects.",
+    "whatIDo": "What I Do",
+    "skills": {
+      "frontend": "Frontend Development (React, TypeScript)",
+      "backend": "Backend Development (Node.js, Python, PHP)",
+      "database": "Database Design & Management",
+      "uiux": "UI/UX Design & Implementation"
+    }
+  },
+  "skills": {
+    "title": "Skills & Expertise",
+    "description": "Here are the technologies and tools I work with to bring ideas to life"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "description": "A selection of projects that showcase my skills and passion for development"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "description": "Ready to work together? I'd love to hear about your project and discuss how we can bring your ideas to life.",
+    "form": {
+      "nameLabel": "Full Name",
+      "namePlaceholder": "Your full name",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "your@email.com",
+      "subjectLabel": "Subject",
+      "subjectPlaceholder": "What's this about?",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Tell me about your project or idea...",
+      "sendMessage": "Send Message",
+      "sending": "Sending...",
+      "successTitle": "Message sent successfully!",
+      "successDescription": "Thank you for your message. I'll get back to you soon."
+    }
+  },
+  "footer": {
+    "role": "Full Stack Developer",
+    "copyright": "© 2025 Leonardo Rohrbacher. All rights reserved."
+  }
+}

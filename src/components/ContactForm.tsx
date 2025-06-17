@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -7,8 +6,10 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Mail, User, MessageSquare, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { useTranslation } from "react-i18next";
 
 export const ContactForm = () => {
+  const { t } = useTranslation();
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
@@ -32,8 +33,8 @@ export const ContactForm = () => {
     // Simulate form submission
     setTimeout(() => {
       toast({
-        title: "Message sent successfully!",
-        description: "Thank you for your message. I'll get back to you soon.",
+        title: t('contact.form.successTitle', "Message sent successfully!"),
+        description: t('contact.form.successDescription', "Thank you for your message. I'll get back to you soon."),
       });
       setFormData({ name: "", email: "", subject: "", message: "" });
       setIsSubmitting(false);
@@ -48,7 +49,7 @@ export const ContactForm = () => {
             <div className="space-y-2">
               <Label htmlFor="name" className="text-sm font-medium text-gray-700">
                 <User className="inline w-4 h-4 mr-2" />
-                Full Name
+                {t('contact.form.nameLabel', "Full Name")}
               </Label>
               <Input
                 id="name"
@@ -58,13 +59,13 @@ export const ContactForm = () => {
                 value={formData.name}
                 onChange={handleChange}
                 className="border-gray-200 focus:border-blue-500 focus:ring-blue-500"
-                placeholder="Your full name"
+                placeholder={t('contact.form.namePlaceholder', "Your full name")}
               />
             </div>
             <div className="space-y-2">
               <Label htmlFor="email" className="text-sm font-medium text-gray-700">
                 <Mail className="inline w-4 h-4 mr-2" />
-                Email Address
+                {t('contact.form.emailLabel', "Email Address")}
               </Label>
               <Input
                 id="email"
@@ -74,7 +75,7 @@ export const ContactForm = () => {
                 value={formData.email}
                 onChange={handleChange}
                 className="border-gray-200 focus:border-blue-500 focus:ring-blue-500"
-                placeholder="your@email.com"
+                placeholder={t('contact.form.emailPlaceholder', "your@email.com")}
               />
             </div>
           </div>
@@ -82,7 +83,7 @@ export const ContactForm = () => {
           <div className="space-y-2">
             <Label htmlFor="subject" className="text-sm font-medium text-gray-700">
               <MessageSquare className="inline w-4 h-4 mr-2" />
-              Subject
+              {t('contact.form.subjectLabel', "Subject")}
             </Label>
             <Input
               id="subject"
@@ -92,13 +93,13 @@ export const ContactForm = () => {
               value={formData.subject}
               onChange={handleChange}
               className="border-gray-200 focus:border-blue-500 focus:ring-blue-500"
-              placeholder="What's this about?"
+              placeholder={t('contact.form.subjectPlaceholder', "What's this about?")}
             />
           </div>
           
           <div className="space-y-2">
             <Label htmlFor="message" className="text-sm font-medium text-gray-700">
-              Message
+              {t('contact.form.messageLabel', "Message")}
             </Label>
             <Textarea
               id="message"
@@ -108,7 +109,7 @@ export const ContactForm = () => {
               onChange={handleChange}
               rows={6}
               className="border-gray-200 focus:border-blue-500 focus:ring-blue-500 resize-none"
-              placeholder="Tell me about your project or idea..."
+              placeholder={t('contact.form.messagePlaceholder', "Tell me about your project or idea...")}
             />
           </div>
           
@@ -118,11 +119,11 @@ export const ContactForm = () => {
             className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white py-3 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {isSubmitting ? (
-              "Sending..."
+              t('contact.form.sending', "Sending...")
             ) : (
               <>
                 <Send className="w-4 h-4 mr-2" />
-                Send Message
+                {t('contact.form.sendMessage', "Send Message")}
               </>
             )}
           </Button>

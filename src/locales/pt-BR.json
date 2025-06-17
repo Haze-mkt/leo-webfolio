@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "about": "Sobre",
+    "skills": "Habilidades",
+    "projects": "Projetos",
+    "contact": "Contato"
+  },
+  "hero": {
+    "title": "Leonardo Rohrbacher",
+    "role": "Desenvolvedor Full Stack",
+    "description": "Criando aplicações web bonitas e escaláveis com tecnologias modernas. Apaixonado por criar experiências excepcionais para usuários e soluções robustas de backend.",
+    "viewWork": "Ver Meus Trabalhos",
+    "getInTouch": "Entre em Contato"
+  },
+  "about": {
+    "title": "Sobre Mim",
+    "paragraph1": "Sou um desenvolvedor full stack com expertise em tecnologias web modernas. Adoro construir aplicações que resolvem problemas reais e proporcionam experiências excepcionais aos usuários.",
+    "paragraph2": "Com experiência em desenvolvimento frontend e backend, dou vida às ideias através de código limpo, eficiente e design responsivo. Estou sempre disposto a aprender novas tecnologias e enfrentar projetos desafiadores.",
+    "whatIDo": "O Que Eu Faço",
+    "skills": {
+      "frontend": "Desenvolvimento Frontend (React, TypeScript)",
+      "backend": "Desenvolvimento Backend (Node.js, Python, PHP)",
+      "database": "Design e Gerenciamento de Banco de Dados",
+      "uiux": "Design e Implementação de UI/UX"
+    }
+  },
+  "skills": {
+    "title": "Habilidades e Especialidades",
+    "description": "Aqui estão as tecnologias e ferramentas com as quais trabalho para executar projetos",
+    "frontend": { "title": "Desenvolvimento Frontend"},
+    "backend": { "title": "Desenvolvimento Backend"},
+    "web": { "title": "Tecnologias Web"},
+    "responsive": { "title": "Design responsivo"}
+  },
+  "projects": {
+    "servimaq": {
+      "title": "Site Servimaq",
+      "description": "Landing page construída com React e TypeScript."
+    },
+    "harmonyhawk": {
+      "title": "Harmony Hawk",
+      "description": "Uma ferramenta de análise de notas musicais em tempo real, utilizando IA"
+    },
+    "dashboard": {
+      "title": "Dashboard Gerencial",
+      "description": "Painel de controle interativo para visualização de dados de vendas, desenvolvido com React e Typescript"
+    },
+    "title": "Projetos em Destaque",
+    "description": "Uma seleção de projetos que demonstram minhas habilidades e paixão pelo desenvolvimento"
+  },
+  "contact": {
+    "title": "Entre em Contato",
+    "description": "Pronto para trabalharmos juntos? Eu adoraria ouvir sobre seu projeto e discutir como podemos dar vida às suas ideias.",
+    "form": {
+      "nameLabel": "Nome Completo",
+      "namePlaceholder": "Seu nome completo",
+      "emailLabel": "Endereço de Email",
+      "emailPlaceholder": "seu@email.com",
+      "subjectLabel": "Assunto",
+      "subjectPlaceholder": "Sobre o que você gostaria de me contactar?",
+      "messageLabel": "Mensagem",
+      "messagePlaceholder": "Conte-me sobre seu projeto ou ideia...",
+      "sendMessage": "Enviar Mensagem",
+      "sending": "Enviando...",
+      "successTitle": "Mensagem enviada com sucesso!",
+      "successDescription": "Obrigado pela sua mensagem. Retornarei em breve."
+    }
+  },
+
+  "footer": {
+    "role": "Desenvolvedor Full Stack",
+    "copyright": "© 2025 Leonardo Rohrbacher. Todos os direitos reservados."
+  }
+}
