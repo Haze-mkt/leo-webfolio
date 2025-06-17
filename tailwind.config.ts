@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -19,10 +18,6 @@ export default {
 			}
 		},
 		extend: {
-			fontFamily: {
-				'gothic': ['Cinzel Decorative', 'serif'],
-				'serif': ['Cinzel', 'serif'],
-			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -89,20 +84,11 @@ export default {
 					to: {
 						height: '0'
 					}
-				},
-				'gothic-glow': {
-					'0%, 100%': {
-						boxShadow: '0 0 5px rgba(245, 158, 11, 0.3)'
-					},
-					'50%': {
-						boxShadow: '0 0 20px rgba(245, 158, 11, 0.6), 0 0 30px rgba(245, 158, 11, 0.3)'
-					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out',
-				'gothic-glow': 'gothic-glow 3s ease-in-out infinite'
+				'accordion-up': 'accordion-up 0.2s ease-out'
 			}
 		}
 	},
